@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Minha Página Pessoal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #003d82;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Olá! Bem-vindo(a) à minha página!</h1>
+        <p>Esta é a minha página web estática criada para a aula de Automated Software Engineering.</p>
+        <p>Aqui estamos a testar a integração contínua (CI/CD) com o GitHub Actions.</p>
+        
+        <button onclick="mostrarMensagem()">Clica em mim</button>
+        <p id="mensagem" style="color: green; margin-top: 15px; font-weight: bold;"></p>
+    </div>
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").innerText = "O JavaScript está a funcionar! O deploy foi um sucesso!";
+        }
+    </script>
+
+</body>
+</html>
